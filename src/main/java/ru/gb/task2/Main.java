@@ -12,10 +12,9 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        final String SAVED_GAME = "./src/main/java/ru/gb/task2/saved_game.txt";
-        String gameFileName = "SAVED_GAME";
+        final String SAVED_GAME = "./src/main/java/ru/gb/task2/saved/saved_game.txt";
         Game gameWriter = new Game();
-        gameWriter.writeGameToFile(gameFileName);
-        gameWriter.printSizeOfFile(gameFileName);
+        gameWriter.writeGameToFile(SAVED_GAME);
+        gameWriter.printSizeOfFile(SAVED_GAME);
     }
 }

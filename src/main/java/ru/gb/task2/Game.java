@@ -28,7 +28,7 @@ public class Game {
     public void printSizeOfFile(String fileName) {
         File file = new File(fileName);
         if ((file.exists()) && (file.isFile())) {
-            System.out.println("Размер файла '" + fileName + "': "  + file.length() + " байт");
+            System.out.println("Размер сохраненного файла: "  + file.length() + " байт");
         }
     }
 }
